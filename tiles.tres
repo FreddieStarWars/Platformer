@@ -1,0 +1,19 @@
+[gd_resource type="TileSet" load_steps=4 format=3 uid="uid://bnxi10ojc4thd"]
+
+[ext_resource type="Texture2D" uid="uid://bw4pm82ss3qk7" path="res://tiles.png" id="1_vlhfe"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ep8su"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3bx74"]
+texture = ExtResource("1_vlhfe")
+texture_region_size = Vector2i(8, 8)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)
+
+[resource]
+tile_size = Vector2i(8, 8)
+physics_layer_0/collision_layer = 1
+physics_layer_0/physics_material = SubResource("PhysicsMaterial_ep8su")
+sources/0 = SubResource("TileSetAtlasSource_3bx74")
